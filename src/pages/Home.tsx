@@ -1,15 +1,20 @@
 import "../css/Home.css";
-import { CheckboxDemo } from "../components/CheckBox";
-import { Button } from "../components/ui/button";
+import AddTaskButton from "../components/AddTaskButton";
+import Checkbox from "@/components/CheckBox";
 function Home() {
   return (
     <>
-      <div className="home-page flex content-center h-screen bg-[rgb(39,39,42)]">
-        <h1 className="text-white">TO DO LIST</h1>
-        <Button className="text-white" variant="outline">
-          Click
-        </Button>
-        <CheckboxDemo />
+      <div className="home-page flex-col h-screen bg-[rgb(39,39,42)] text-2xl sm:text-lx md:text-2xl lg:text-3xl xl:text-4xl">
+        <div className="home-page gap-5 flex w-64 h-32 ">
+        <h1>TO DO LIST</h1>
+          <AddTaskButton />,
+        </div>
+          <Checkbox content="" />
+          <Checkbox content="" />
+          <Checkbox content="" />
+          <Checkbox content="" />
+          <Checkbox content="" />
+          <Checkbox content="" />
       </div>
     </>
   );
